@@ -21,7 +21,7 @@ public class MainDemoApp {
 		accountDao.addAccount();
 		
 //		call the membership business method
-		membershipDAO.addAccount();
+		membershipDAO.addSillyMember();
 /*//		do it again!
 		System.out.println("\n let's call it again!\n");
 		
