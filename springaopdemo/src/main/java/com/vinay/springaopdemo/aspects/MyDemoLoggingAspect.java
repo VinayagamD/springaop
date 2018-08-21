@@ -12,7 +12,12 @@ public class MyDemoLoggingAspect {
 	
 //	let's start with an @Before advice
 //	@Before("execution(public void add*())")
-	@Before("execution(* add*())")
+//	@Before("execution(* add*())")
+//	@Before("execution(* add*(com.vinay.springaopdemo.Account))")
+//	@Before("execution(* add*(com.vinay.springaopdemo.Account, ..))")
+//	@Before("execution(* add*(..))")
+	@Before("execution(* com.vinay.springaopdemo.dao.*.*(..))")
+//	@Before("execution(* add*(Account))")
 //	@Before("execution(public void updateAccount())")
 	public void beforeAddAccountAdvice() {
 		System.out.println("\n======>>> Execution @Before advice on updateAccount()");
